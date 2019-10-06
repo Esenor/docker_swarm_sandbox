@@ -1,0 +1,22 @@
+version: "3"
+services:
+  receiver_a:
+    image: service_receiver:version_a
+    environment:
+      - EFC_APP_ID=receiver_a
+    deploy:
+      mode: replicated
+      replicas: 1
+    command: "npm start"
+  receiver_b:
+    image: service_receiver:version_b
+    environment:
+      - EFC_APP_ID=receiver_b
+    deploy:
+      mode: replicated
+      replicas: 3
+    command: "npm start"
+networks:
+  default:
+    external:
+        name: efc_swarm

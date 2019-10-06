@@ -1,0 +1,6 @@
+version: "2"
+services:
+  service_receiver:
+    build: .
+    image: service_receiver
+    user: node
