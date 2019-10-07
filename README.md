@@ -2,6 +2,8 @@
 
 ## Install sandbox environment ##
 
+![sandbox swarm architecture](https://github.com/Esenor/docker_swarm_sandbox/blob/master/sandbox_swarm_architecture.png)
+
 ### Create docker-machine servers network ###
 
 > Use Virtualbox (or hyperV) has sandbox network of servers
