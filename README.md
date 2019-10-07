@@ -11,6 +11,7 @@ Create one manager server and at least 2 worker server.
     docker-machine create --driver virtualbox manager1
     docker-machine create --driver virtualbox worker1
     docker-machine create --driver virtualbox worker2
+    docker-machine create --driver virtualbox worker3
 
 ### Register `manager1` has manager node. ###
 
